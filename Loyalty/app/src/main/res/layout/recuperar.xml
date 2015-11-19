@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:id="@+id/Componentes_topo">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/espaco_foto"
+            android:src="@drawable/foto" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Primeiro_nome"
+        android:text="Luciana Mendes"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_toRightOf="@+id/espaco_foto"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sub_titulo"
+            android:text="Naoca Restaurante"
+            android:layout_toRightOf="@+id/espaco_foto"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/Primeiro_nome"/>
+       <Button
+           android:layout_width="55dp"
+           android:layout_height="53dp"
+           android:id="@+id/adicionar"
+           android:background="@drawable/adicionar"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="20dp"
+           />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/linha"
+        android:background="#aaa"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginRight="82dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/conteiner_info">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cash"
+            android:id="@+id/cash"
+            android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cashback"
+            android:textSize="16sp"
+            android:id="@+id/cashback"
+            android:layout_toRightOf="@+id/cash"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/resgate"
+            android:id="@+id/regate_img"
+            android:layout_marginRight="25dp"
+            android:layout_below="@+id/cashback"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resgate"
+            android:textSize="16sp"
+            android:id="@+id/resgates"
+            android:layout_below="@+id/cashback"
+            android:layout_marginTop="22dp"
+            android:layout_toRightOf="@id/regate_img"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/compras"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/resgates"
+            android:id="@+id/compras"
+            android:layout_marginRight="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compras Canceladas"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/compras"
+            android:id="@+id/cancelar"
+            android:layout_below="@+id/resgates"
+            android:layout_marginTop="25dp"/>
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/butao_um"
+            android:text="ButaoUm"
+            android:background="#379cc7"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butao_dois"
+            android:text="ButaoDois"
+            android:background="#379cc7"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/butao_um"
+            android:layout_toEndOf="@+id/butao_um"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butao_tres"
+            android:text="ButaoTres"
+            android:background="#379cc7"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/butao_dois"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

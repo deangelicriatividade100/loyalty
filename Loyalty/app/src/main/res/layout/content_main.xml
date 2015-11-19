@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="47dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Resgate"
+        android:layout_centerInParent="true"
+        android:background="@drawable/back_button"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Resgate"
+        android:textColor="#fff"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Compra"
+        android:layout_below="@+id/Resgate"
+        android:background="@drawable/back_button"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Resgate e Compre"
+        android:textColor="#fff"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/butao_um"
+        android:text="ButaoUm"
+        android:background="#379cc7"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/butao_dois"
+        android:text="ButaoDois"
+        android:background="#379cc7"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/butao_um"
+        android:layout_toEndOf="@+id/butao_um"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/butao_tres"
+        android:text="ButaoTres"
+        android:background="#379cc7"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/butao_dois"
+         />
+
+
+</RelativeLayout>
